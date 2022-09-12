@@ -11,7 +11,41 @@ a:hover {
   background-color: yellow;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 /* defining the cards behavoir */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+}
+
 .cards {
   display: table;
   padding: 50px;
