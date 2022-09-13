@@ -11,21 +11,6 @@ a:hover {
   background-color: yellow;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-/* defining the cards behavoir */
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -39,6 +24,58 @@ li {
 a {
   display: block;
   padding: 8px;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  /* defining the cards behavoir */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-basis: 100px;
+}
+
+.column-header {
+  /* defining the cards behavoir */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.header {
+  flex-basis: 100px;
+}
+
+.navbar {
+  border-bottom: 5px solid black;
+  margin-top: 100px;
+  float: right;
+}
+
+#divider {
+  position: relative;
+  top: 800px;
+  left: 9px;
+  width: 50;
+  text-align: center;
+  margin: 0 0 0 0;
+  border-bottom: 1px solid #888888;
 }
 
 .header-container {
@@ -59,7 +96,7 @@ a {
 
 /* resizing the store logo */
 .store-logo {
-  display: block;
+  display: flex;
   width: 300px;
   height: 300px;
   margin-left: 50px;
@@ -76,7 +113,7 @@ a {
 }
 
 .page-button {
-  font-size: 36px;
+  font-size: 24px;
   padding: 20px;
 }
 
@@ -90,6 +127,7 @@ a {
 
 #header-text {
   font-size: 24px;
+  margin-top: -100px;
 }
 
 #checkout-line {
@@ -98,7 +136,7 @@ a {
 
 /* style for buttons on all three page */
 #add-button {
-  position: relative;
+  position: block;
   margin-left: 100px;
   bottom: 30px;
   color: black;

@@ -8,24 +8,37 @@
   </head>
 
   <body>
-    <div class="header">
-      <a href="index.html"
-        ><img class="store-logo" src="assets/logo-01.svg"
-      /></a>
-      <hr />
-    </div>
-
-    <div class="navbar">
-      <!-- nav bar for  product and carts -->
-      <div class="page-button">
-        <a href="index.html">PRODUCTS</a>
+    <div class="row-header">
+      <div class="column-header">
+        <div class="header">
+          <!-- this defines the header logo -->
+          <a href="index.html"
+            ><img class="store-logo" src="assets/logo-01.svg" />
+          </a>
+        </div>
       </div>
 
-      <div class="page-button">
-        <a href="cart.html">CART</a>
+      <div class="column-header">
+        <div class="navbar">
+          <!-- nav bar for products and cart pages -->
+          <ul>
+            <li>
+              <div class="page-button">
+                <a href="index.html">PRODUCTS</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="page-button">
+                <a href="cart.html">CART</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
+    <p id="header-text">Our hand-made cinnamon rolls</p>
     <div class="checkout-items">
       <!-- items created for checkout -->
 
